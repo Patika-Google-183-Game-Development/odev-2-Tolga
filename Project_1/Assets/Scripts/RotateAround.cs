@@ -4,17 +4,34 @@ using UnityEngine;
 
 public class RotateAround : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     [SerializeField] float speed;
     [SerializeField] Transform target;
+
+    private float rotateValue;
+
     void Start()
     {
-        
+        StartCoroutine(Rotating());
+
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator Rotating()
     {
-        transform.RotateAround(target.position, Vector3.up, Time.deltaTime * speed);
+
+            transform.RotateAround(target.position, Vector3.up, speed * Time.deltaTime); //// Spin the object around the target at a certain speed.
+            rotateValue += speed * Time.deltaTime; // rotateValue is the amount of degrees the object has rotated. 
+            if(rotateValue > 360) { // if rotateValue more than 360 degree then reset to 0 and get log.
+                rotateValue = 0;
+                Debug.Log(this.gameObject.name + " Rotate Complete");
+            }
+            
+            yield return new WaitForFixedUpdate();
+            StartCoroutine(Rotating());
+        
     }
+    
+
+    
+
 }
