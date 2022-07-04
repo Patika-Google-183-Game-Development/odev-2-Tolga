@@ -6,13 +6,13 @@ public class SelfRotate : MonoBehaviour
 {
 
     [SerializeField] float speed;
-
-
+    
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(Spinning());
+        
     }
 
     IEnumerator Spinning()
@@ -20,7 +20,7 @@ public class SelfRotate : MonoBehaviour
         while (true)
         {
             
-            transform.Rotate(Vector3.up, speed * Time.deltaTime);
+            transform.Rotate(Vector3.up, speed * Time.deltaTime); // Rotates around itself
             yield return new WaitForFixedUpdate();
         }
     }
