@@ -26,8 +26,8 @@ public class RotateAround : MonoBehaviour
                 Debug.Log(this.gameObject.name + " Rotate Complete");
             }
             
-            yield return new WaitForFixedUpdate();
-            StartCoroutine(Rotating());
+            yield return new WaitForFixedUpdate(); // wait for next frame.
+            StartCoroutine(Rotating()); // start again.
         
     }
     
