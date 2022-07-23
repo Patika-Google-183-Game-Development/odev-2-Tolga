@@ -105,14 +105,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7080704915996834385}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14fa2ceb97a31734093c957ea9a066a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   planet:
-  - {fileID: 5976053486617793209, guid: 1a3ed882e5b37d94e9f395a3403162b4, type: 3}
-  - {fileID: 3601299622664383924, guid: 06b4b4a907d834b4684311069ebf011a, type: 3}
-  - {fileID: 5487103912009757090, guid: e4b71cbf081cfc049938f3dc45be0912, type: 3}
-  - {fileID: 4572082932008054967, guid: 9f2cdd03e0774054095bcaa9759aa7c1, type: 3}
+  - {fileID: 4572082932007627927, guid: 9f2cdd03e0774054095bcaa9759aa7c1, type: 3}
+  - {fileID: 5487103912009757095, guid: e4b71cbf081cfc049938f3dc45be0912, type: 3}
+  - {fileID: 3601299622664383929, guid: 06b4b4a907d834b4684311069ebf011a, type: 3}
+  - {fileID: 5976053486617793213, guid: 1a3ed882e5b37d94e9f395a3403162b4, type: 3}
   speed: 15

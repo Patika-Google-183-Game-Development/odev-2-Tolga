@@ -4,29 +4,32 @@ using UnityEngine;
 
 public class Meteor : MonoBehaviour
 {
-    [SerializeField] private GameObject[] planet;
+    [SerializeField] private Transform[] planet;
     [SerializeField] private float speed = 2.0f;
+
+    Vector3 _distanceTarget;
 
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(FollowPlanet());
+
     }
 
 
     IEnumerator FollowPlanet()
     {
-        int planetIndex = Random.Range(0, planet.Length); // get random planet index
-        // get random planet position and set it as target position for meteor. 
-        Vector3 targetPos = planet[planetIndex].transform.position;
-        // get targePos name
-        Debug.Log(planet[planetIndex].name);
 
+        int planetIndex = Random.Range(0, planet.Length); // get random planet index
+        Vector3 targetPos = planet[planetIndex].position;
 
         // while true, follow the planet
         while (true)
         {
+            // get targePos name
+            Debug.Log(planet[planetIndex].name);
+
             // get the distance between meteor and planet
             float distance = Vector3.Distance(transform.position, targetPos);
 
