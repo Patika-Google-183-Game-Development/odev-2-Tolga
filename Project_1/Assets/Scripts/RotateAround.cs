@@ -13,7 +13,6 @@ public class RotateAround : MonoBehaviour
     void Start()
     {
         StartCoroutine(Rotating());
-
     }
 
     IEnumerator Rotating()
