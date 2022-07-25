@@ -15,10 +15,5 @@ A simple solar system is simulated.
 <li> Adding basic UI. When you click on the planet, you can see basic informatin panel about planet.
 <li> Adding particle system. When meteor hits the planet, it explodes and creates a particle system.
 
-
-https://user-images.githubusercontent.com/10477308/180824089-381616d9-9e7c-4112-93bf-4ca93607dfb3.mp4
-
-
-
 https://user-images.githubusercontent.com/10477308/180825089-912a1017-06fe-4dae-a250-7c0ab4e0ecb9.mp4
 
